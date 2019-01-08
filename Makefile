@@ -1,15 +1,21 @@
-#Makefile
+#makefile
 .PHONY: clean
-EXE = helloworld
+EXE = bin/main
 SUBDIR= src
+
+GCC = clang++
 
 CXX_SOURCES = $(foreach dir,$(SUBDIR), $(wildcard $(dir)/*.cpp))
 CXX_OBJECTS = $(patsubst %.cpp, %.o, $(CXX_SOURCES))
 
-CXXFLAGS +=
+CXXFLAGS += -std=c++11 -Wall -g
 LDFLAGS += 
 
-$(EXE):
-	@echo exe.
+$(EXE): $(CXX_OBJECTS)
+	$(GCC) $(CXXFLAGS) $^ -o $@
+
+%.o: %.cpp
+	$(GCC) $(CXXFLAGS) -c $< -o $@
+
 clean:
-	@echo clean..
+	@echo clean...
