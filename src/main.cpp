@@ -1,6 +1,9 @@
 #include <iostream>
+#include "include/test.h"
 
 int main() {
-    std::cout << "helloworld" << std::endl;
+    ::test::Hello h;
+    h.say();
+    ::std::cout << "helloworld" << std::endl;
     return 0;
 }
