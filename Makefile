@@ -39,4 +39,4 @@ $(LD_CXX_LIBS): $(LD_CXX_OBJECTS)
 	$(GCC) $(CXXFLAGS) $(CXX_INCLUDE) -c $< -o $@
 
 clean:
-	rm $(EXE) $(LD_CXX_LIBS)
+	rm $(EXE) $(LD_CXX_LIBS) $(LD_CXX_OBJECTS)
