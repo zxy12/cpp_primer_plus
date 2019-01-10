@@ -1,9 +1,15 @@
 #include <iostream>
-#include "include/test.h"
+#include "test.h"
+#include "runner.h"
+
+std::vector <exe::Runner *> container;
+test::Hello hello(&container);
 
 int main() {
-    ::test::Hello h;
-    h.say();
-    ::std::cout << "helloworld" << std::endl;
+
+    for(std::vector<exe::Runner *>::iterator it=container.begin(); it!=container.end(); it++) {
+        (*it)->main();
+    }
+
     return 0;
 }

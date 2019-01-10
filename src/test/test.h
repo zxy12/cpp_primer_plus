@@ -1,10 +1,17 @@
 #include <iostream>
+#include "runner.h"
+
+#ifndef _TEST_H
+#define _TEST_H
 namespace test
 {
-    class Hello {
+    class Hello : public virtual exe::Runner {
         public:
             Hello();
+            Hello(std::vector < exe::Runner *> * container);
             ~Hello();
-            std::string say();
+            virtual int main();
     };
+    extern std::vector < exe::Runner *> container;
 }
+#endif

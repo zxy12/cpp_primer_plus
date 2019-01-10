@@ -22,7 +22,7 @@ CXXFLAGS += -std=c++11 -Wall -g
 LDFLAGS += 
 
 
-CXX_INCLUDE = -I./
+CXX_INCLUDE = -I./include
 CXX_LIBS = -L./lib
 
 $(EXE): $(CXX_OBJECTS) $(LD_CXX_LIBS)
