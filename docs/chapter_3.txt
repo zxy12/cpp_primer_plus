@@ -1,1 +1,4 @@
 # 第三章 处理数据
+## 3.4.4 类型转换
+1. 两个short值相加，会先转换成int计算，因为int速度快
+2. `static_cast<typeName> (value) // converts value to typeName type`
