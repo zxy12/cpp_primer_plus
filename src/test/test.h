@@ -10,8 +10,7 @@ namespace test
             Hello();
             Hello(std::vector < exe::Runner *> * container);
             ~Hello();
-            virtual int main();
+           virtual int main();
     };
-    extern std::vector < exe::Runner *> container;
 }
 #endif

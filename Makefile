@@ -4,7 +4,7 @@ EXE = bin/main
 INCLUDE_DIR = include
 LIB_DIR = lib
 SUBDIR= src
-LDSUBDIR = src/test
+LDSUBDIR = src/test src/chapter3
 
 GCC = clang++
 
