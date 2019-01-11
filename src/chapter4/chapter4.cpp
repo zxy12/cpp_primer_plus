@@ -1,21 +1,21 @@
 #include <iostream>
-#include "chapter3.h"
+#include "chapter4.h"
 #include "runner.h"
 
 namespace CPP {
-    Chapter3::Chapter3() {
+    Chapter4::Chapter4() {
     }
-    Chapter3::~Chapter3() {
+    Chapter4::~Chapter4() {
     }
 
-    Chapter3::Chapter3(std::vector < exe::Runner *> * container ) {
-        std::cout << "\n=====chapter3 init.=====\n" <<std::endl;
+    Chapter4::Chapter4(std::vector < exe::Runner *> * container ) {
+        std::cout << "\n=====Chapter4 init.=====\n" <<std::endl;
         container->push_back(this);
     }
 
-    int Chapter3::main() {
+    int Chapter4::main() {
         using namespace std;
-        cout << "[[[===== start-Chapter3 =====" << endl;
+        cout << "[[[===== start-Chapter4 =====" << endl;
 
         int i1 = 100;
         cout << "i1=100: " << i1 << endl;
@@ -29,7 +29,7 @@ namespace CPP {
         auto ii = 123;
         cout << "auto ii=123: " << ii << endl;
 
-        cout << "===== end-Chapter3 =====]]]\n" << endl;
+        cout << "===== end-Chapter4 =====]]]\n" << endl;
         return 0;
     }
 

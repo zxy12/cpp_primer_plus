@@ -5,6 +5,7 @@ INCLUDE_DIR = include
 LIB_DIR = lib
 SUBDIR= src
 LDSUBDIR = src/test src/chapter3
+LDSUBDIR += src/chapter4
 
 GCC = clang++
 
